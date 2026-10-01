@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashish Pal - B.Tech CSE journey, projects, coding learning and games.">
+  <title>Ashish Pal | B.Tech CSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">ASHISH<span>PAL</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#learn">Learn & Play</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">B.TECH CSE • 1ST YEAR • BUILDING IN PUBLIC</p>
+        <h1>Hi, I'm <span>Ashish Pal.</span><br>Learning. Building. Growing.</h1>
+        <p class="hero-text">My personal space for my CSE journey, projects, coding practice and free learning resources.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#learn">Start Learning 🚀</a>
+          <a class="btn secondary" href="#projects">See Projects</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">AP</div>
+        <h2>CSE Explorer</h2>
+        <p>Turning curiosity into code.</p>
+        <div class="stats">
+          <div><b id="xpTop">0</b><small>XP</small></div>
+          <div><b id="levelTop">1</b><small>LEVEL</small></div>
+          <div><b id="badgeTop">0</b><small>BADGES</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-head">
+        <p class="eyebrow">MY STORY</p>
+        <h2>CSE Journey</h2>
+        <p>From learning the basics to building real projects — this journey will keep growing.</p>
+      </div>
+      <div class="timeline">
+        <article><span>01</span><div><h3>B.Tech CSE</h3><p>Starting the first-year CSE journey and building strong fundamentals.</p></div></article>
+        <article><span>02</span><div><h3>Programming</h3><p>Learning C, Python, problem solving and gradually moving toward DSA.</p></div></article>
+        <article><span>03</span><div><h3>Projects</h3><p>Building practical electronics, coding and AI-related projects.</p></div></article>
+        <article><span>04</span><div><h3>AI / Data Science</h3><p>Long-term goal: explore AI, ML and Data Science through real projects.</p></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="section-head">
+        <p class="eyebrow">BUILD LOG</p>
+        <h2>My Projects</h2>
+      </div>
+      <div class="cards">
+        <article class="card project-card">
+          <div class="card-icon">🚗</div>
+          <h3>Arduino Smart Car</h3>
+          <p>Bluetooth-controlled Arduino car built as a science exhibition project.</p>
+          <div class="tags"><span>Arduino</span><span>HC-05</span><span>L298N</span><span>IoT</span></div>
+          <span class="status">Completed / Improving</span>
+        </article>
+        <article class="card project-card">
+          <div class="card-icon">🌐</div>
+          <h3>CSE Learning Hub</h3>
+          <p>This website — a place for coding lessons, challenges, notes and progress.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <span class="status">Building</span>
+        </article>
+        <article class="card project-card">
+          <div class="card-icon">🤖</div>
+          <h3>Future AI Projects</h3>
+          <p>AI/ML and Data Science projects will be added here as the journey progresses.</p>
+          <div class="tags"><span>Python</span><span>AI</span><span>ML</span></div>
+          <span class="status">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-head">
+        <p class="eyebrow">LEARN BY PLAYING</p>
+        <h2>Learn & Play 🎮</h2>
+        <p>Learn a concept, take a challenge, earn XP and unlock badges.</p>
+      </div>
+
+      <div class="progress-box">
+        <div class="progress-top"><b>Your Progress</b><span><span id="xp">0</span> XP • Level <span id="level">1</span></span></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <p id="progressText">Earn XP by completing challenges.</p>
+      </div>
+
+      <div class="learning-grid">
+        <button class="learn-card active" data-course="c">
+          <span>💻</span><b>C Programming</b><small>Basics → Logic → Functions</small>
+        </button>
+        <button class="learn-card" data-course="python">
+          <span>🐍</span><b>Python</b><small>Syntax → Projects → AI</small>
+        </button>
+        <button class="learn-card" data-course="dsa">
+          <span>🧩</span><b>DSA</b><small>Logic → Structures → Algorithms</small>
+        </button>
+        <button class="learn-card" data-course="web">
+          <span>🌐</span><b>HTML / CSS / JS</b><small>Build → Style → Interact</small>
+        </button>
+        <button class="learn-card" data-course="ai">
+          <span>🤖</span><b>AI / ML</b><small>Python → Data → Models</small>
+        </button>
+      </div>
+
+      <div class="lesson-box">
+        <div>
+          <p class="eyebrow">TODAY'S LESSON</p>
+          <h3 id="lessonTitle">C Programming — Variables</h3>
+          <p id="lessonText">A variable is a named place in memory used to store a value. Example: <code>int age = 18;</code></p>
+        </div>
+        <button class="btn primary" id="lessonDone">Complete Lesson +20 XP</button>
+      </div>
+
+      <div class="games">
+        <div class="game-card">
+          <div class="game-title"><span>🧠</span><div><p class="eyebrow">GAME 01</p><h3>MCQ Challenge</h3></div></div>
+          <p id="quizQuestion">Which symbol ends a normal C statement?</p>
+          <div id="quizOptions" class="options">
+            <button data-answer=";">;</button>
+            <button data-answer=".">.</button>
+            <button data-answer=":">:</button>
+            <button data-answer=",">,</button>
+          </div>
+          <p id="quizResult" class="result"></p>
+        </div>
+
+        <div class="game-card">
+          <div class="game-title"><span>🔮</span><div><p class="eyebrow">GAME 02</p><h3>Output Guess</h3></div></div>
+          <pre><code>int x = 5;
+x = x + 3;
+printf("%d", x);</code></pre>
+          <p>What will be printed?</p>
+          <div class="options output-options">
+            <button data-output="5">5</button>
+            <button data-output="8">8</button>
+            <button data-output="53">53</button>
+            <button data-output="3">3</button>
+          </div>
+          <p id="outputResult" class="result"></p>
+        </div>
+
+        <div class="game-card">
+          <div class="game-title"><span>🐛</span><div><p class="eyebrow">GAME 03</p><h3>Debug the Code</h3></div></div>
+          <pre><code>int age = 18
+printf("%d", age);</code></pre>
+          <p>What is missing?</p>
+          <div class="options debug-options">
+            <button data-debug="semicolon">;</button>
+            <button data-debug="bracket">}</button>
+            <button data-debug="comma">,</button>
+            <button data-debug="quote">"</button>
+          </div>
+          <p id="debugResult" class="result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section alt">
+      <div class="section-head">
+        <p class="eyebrow">FREE CORNER</p>
+        <h2>Notes & Free Resources 📚</h2>
+        <p>Useful material will be added semester by semester.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">📘</div><h3>1st Sem Notes</h3><p>Maths, Physics, Chemistry, Electrical and Communication material.</p><span class="status">Adding soon</span></article>
+        <article class="card"><div class="card-icon">📝</div><h3>PYQ & Important Qs</h3><p>Topic-wise practice and exam-focused questions.</p><span class="status">Adding soon</span></article>
+        <article class="card"><div class="card-icon">🎓</div><h3>Free Learning</h3><p>Curated coding and CSE learning resources, clearly marked free.</p><span class="status">Adding soon</span></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact</h2>
+        <p>Follow the CSE journey and future projects.</p>
+      </div>
+      <div class="socials">
+        <!-- Replace # with your real profile links -->
+        <a href="#" class="social" aria-label="Instagram"><span>📸</span><div><b>Instagram</b><small>@your_instagram</small></div><strong>→</strong></a>
+        <a href="#" class="social" aria-label="Facebook"><span>👍</span><div><b>Facebook</b><small>Your Facebook Profile</small></div><strong>→</strong></a>
+      </div>
+      <p class="privacy-note">No phone number or email is displayed here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Ashish Pal • Built with HTML, CSS & JavaScript 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
